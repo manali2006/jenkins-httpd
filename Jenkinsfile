@@ -11,11 +11,6 @@ steps {
 sh "rm -rf /mnt/wsp-1/jenkins-httpd"
 }
 }
-stage ("git-clone") {
-steps {
-sh "git clone https://github.com/manali2006/jenkins-httpd.git"
-}
-}
 stage ("httpd") {
 steps {
 sh "yum install httpd -y"
